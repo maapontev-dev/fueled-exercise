@@ -37,6 +37,7 @@
 	"devDependencies": {
 		"@ravi.nder/wp-gutenberg-compat": "^0.5.1",
 		"@types/wordpress__block-editor": "^11.5.13",
-		"@types/wordpress__blocks": "^15.10.2"
+		"@types/wordpress__blocks": "^15.10.2",
+		"jest-environment-jsdom": "^29.7.0"
 	}
 }
