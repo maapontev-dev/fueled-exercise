@@ -40,6 +40,13 @@
 				createElement(Spinner),
 			);
 		} else if (selected) {
+			const attribution = [
+				selected.meta?.meridian_testimonial_role,
+				selected.meta?.meridian_testimonial_company,
+			]
+				.filter(Boolean)
+				.join(', ');
+
 			preview = createElement(
 				'section',
 				{
@@ -53,7 +60,7 @@
 					'blockquote',
 					{ className: 'meridian-testimonial__quote' },
 					createElement(RawHTML, null, selected.content?.rendered || ''),
-					createElement('cite', null, selected.title?.rendered || ''),
+					createElement('cite', null, attribution),
 				),
 			);
 		} else {
