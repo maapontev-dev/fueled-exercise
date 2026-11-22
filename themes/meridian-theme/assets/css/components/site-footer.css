@@ -24,7 +24,7 @@
 
 .meridian-footer__links a:hover,
 .meridian-footer__links a:focus,
-.meridian-site-footer .meridian-footer__bottom a:hover {
+.meridian-site-footer :where(.meridian-footer__bottom) a:hover {
 	color: var(--wp--preset--color--accent);
 	text-decoration: none;
 }
@@ -38,7 +38,7 @@
 	column-gap: var(--wp--preset--spacing--56);
 }
 
-.meridian-site-footer .wp-block-column:first-child p {
+.meridian-site-footer .wp-block-column:where(:first-child) p {
 	max-width: 34ch;
 }
 

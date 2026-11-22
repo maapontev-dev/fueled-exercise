@@ -49,7 +49,7 @@
 	margin: 0 0 var(--wp--preset--spacing--12);
 }
 
-.meridian-capability p:not(.meridian-capability__index) {
+.meridian-capability p:where(:not(.meridian-capability__index)) {
 	color: var(--wp--preset--color--muted);
 }
 

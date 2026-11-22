@@ -1,4 +1,4 @@
-body .is-layout-constrained > :where(:not(.alignfull, .wp-block-image)) {
+:where(body) .is-layout-constrained > :where(:not(.alignfull, .wp-block-image)) {
 
 	&.alignright {
 		margin-right: var(--wp--custom--main-content-width-side-spacing);
@@ -11,7 +11,7 @@ body .is-layout-constrained > :where(:not(.alignfull, .wp-block-image)) {
 	}
 }
 
-body .is-layout-constrained.has-global-padding > :where(:not(.alignfull, .wp-block-image)) {
+.is-layout-constrained:where(.has-global-padding) > :where(:not(.alignfull, .wp-block-image)) {
 
 	&.alignleft {
 		margin-left: calc(var(--wp--custom--main-content-width-side-spacing) - var(--wp--style--root--padding-left));
@@ -22,7 +22,7 @@ body .is-layout-constrained.has-global-padding > :where(:not(.alignfull, .wp-blo
 	}
 }
 
-body .is-layout-constrained > .is-layout-flow.alignwide {
+.is-layout-constrained > :where(.is-layout-flow.alignwide) {
 
 	& .alignleft {
 		margin-left: 0;
