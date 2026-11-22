@@ -1,7 +1,10 @@
 import { registerBlockType } from '@wordpress/blocks';
+import type { BlockConfiguration } from '@wordpress/blocks';
 
 import { BlockEdit } from './edit';
-import metadata from './block.json';
+import blockMetadata from './block.json';
+
+const metadata = blockMetadata as BlockConfiguration;
 
 registerBlockType(metadata, {
 	edit: BlockEdit,
