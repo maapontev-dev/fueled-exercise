@@ -7,8 +7,8 @@ html {
 	padding-right: var(--wp--style--root--padding-right);
 }
 
-.is-layout-constrained .wp-block-image.alignwide {
-	max-width: min(100%, var(--wp--style--global--wide-size)) !important;
+:where(.is-layout-constrained) .wp-block-image.alignwide {
+	max-width: min(100%, var(--wp--style--global--wide-size));
 }
 
 .wp-block-post-template.is-layout-flex {

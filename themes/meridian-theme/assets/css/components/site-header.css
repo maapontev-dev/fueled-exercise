@@ -48,6 +48,6 @@
 	color: var(--wp--preset--color--ink);
 }
 
-.meridian-nav-area .wp-block-navigation-item__content:hover {
+.meridian-nav-area .wp-block-navigation-item__content:where(:hover) {
 	color: var(--wp--preset--color--accent-dark);
 }

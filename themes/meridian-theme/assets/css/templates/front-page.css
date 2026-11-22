@@ -1,11 +1,15 @@
 /* --- Front page --- */
 
+.meridian-quote {
+	background-color: var(--wp--preset--color--surface);
+}
+
 /* Full-bleed sections sit flush; their own padding sets the rhythm, so drop
    the constrained-layout block gap between them. */
-.wp-block-group.is-layout-constrained > .meridian-hero,
-.wp-block-group.is-layout-constrained > .meridian-section,
-.wp-block-group.is-layout-constrained > .meridian-quote,
-.wp-block-group.is-layout-constrained > .meridian-cta {
+.wp-block-group:where(.is-layout-constrained) > .meridian-hero,
+.wp-block-group:where(.is-layout-constrained) > .meridian-section,
+.wp-block-group:where(.is-layout-constrained) > .meridian-quote,
+.wp-block-group:where(.is-layout-constrained) > .meridian-cta {
 	margin-block-start: 0;
 }
 
@@ -27,8 +31,4 @@
 .meridian-hero__art svg {
 	height: auto;
 	max-width: 100%;
-}
-
-.meridian-quote {
-	background-color: var(--wp--preset--color--surface);
 }
