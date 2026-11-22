@@ -7,7 +7,9 @@ phpunit.xml
 uploads
 upgrade
 cache
-plugins
+plugins/debug-bar
+plugins/debug-bar-slow-actions
+plugins/query-monitor
 
 # Project Files
 dist
