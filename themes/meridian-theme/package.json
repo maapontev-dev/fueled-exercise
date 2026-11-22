@@ -31,12 +31,12 @@
 		}
 	},
 	"dependencies": {
-		"@10up/block-components": "^1.22.1",
-		"10up-toolkit": "^6.5.1"
+		"@10up/block-components": "^1.18.2",
+		"10up-toolkit": "^7.0.0"
 	},
 	"devDependencies": {
-		"@types/wordpress__block-editor": "^15.0.5",
-		"@types/wordpress__blocks": "^15.10.2",
-		"@ravi.nder/wp-gutenberg-compat": "^0.5.1"
+		"@ravi.nder/wp-gutenberg-compat": "^0.5.1",
+		"@types/wordpress__block-editor": "^11.5.13",
+		"@types/wordpress__blocks": "^15.10.2"
 	}
 }

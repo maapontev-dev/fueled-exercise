@@ -11,7 +11,6 @@
     "themes/*"
   ],
   "scripts": {
-    "prepare": "TEN=\"$(pwd)\"; UP=\"$(git rev-parse --show-toplevel)\"; TENUP=\"${TEN#\"$UP\"}\"; cd \"$(git rev-parse --show-toplevel)\"; husky .\"${TENUP}\"/.husky",
     "setup": "npm install --omit=dev && composer setup",
     "setup:local": "npm install && composer setup:local",
     "build": "npm run build --workspaces --if-present",
@@ -39,15 +38,19 @@
     "webpackbar": "^7.0.0"
   },
   "dependencies": {
-    "10up-toolkit": "^6.5.1"
+    "@10up/block-components": "1.18.2",
+    "@types/wordpress__block-editor": "11.5.13",
+    "10up-toolkit": "^7.0.0",
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
-    "@wordpress/create-block": "4.55.0",
+    "@inquirer/prompts": "^7.0.0",
+    "@wordpress/create-block": "^4.100.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.0",
     "npm-run-all": "^4.1.5",
-    "@inquirer/prompts": "^7.0.0",
     "prettier": "3.3.3",
-    "tar": "^7.4.3"
+    "tar": "^7.4.3",
+    "terser-webpack-plugin": "^5.6.1"
   }
 }

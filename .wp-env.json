@@ -3,6 +3,10 @@
 	"phpVersion": "8.4",
 	"themes": [ "./themes/meridian-theme" ],
 	"testsEnvironment": false,
+	"mappings": {
+        "wp-content/themes": "./themes",
+		"wp-content/plugins": "./plugins"
+    },
 	"config": {
 		"WP_DEBUG": true,
 		"WP_DEBUG_LOG": true,
