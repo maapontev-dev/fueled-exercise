@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "meridian/market-snapshot",
+	"version": "1.0.0",
+	"title": "Market Snapshot",
+	"category": "widgets",
+	"icon": "chart-area",
+	"description": "Displays the latest headline market index values.",
+	"keywords": [
+		"markets",
+		"indices",
+		"snapshot"
+	],
+	"textdomain": "meridian-custom-blocks",
+	"supports": {
+		"html": false,
+		"align": [
+			"wide",
+			"full"
+		]
+	},
+	"editorScript": "file:./index.js",
+	"style": "file:./style.css",
+	"render": "file:./render.php"
+}

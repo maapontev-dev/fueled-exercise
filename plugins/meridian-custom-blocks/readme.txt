@@ -13,6 +13,8 @@ The plugin lets editors choose from a set of blocks custom made for the Meridian
 - Testimonial block: Allows a published testimonial from the existing testimonial
 content type. It renders the quote and any available attribution on the server,
 so unpublished testimonials and empty selections do not produce front-end output.
+- Market snapshot block: Displays a cached, server-rendered snapshot of the Dow
+Jones, S&P 500, and Nasdaq indices from a public keyless market-data source.
 
 The Meridian theme must be active because it provides the testimonial content
 type and its role/company attribution fields.

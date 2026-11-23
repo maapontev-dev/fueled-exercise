@@ -18,7 +18,7 @@
 <!-- wp:html -->
 <div class="meridian-markets__grid" role="presentation">
 	<div class="meridian-markets__item">
-		<span class="meridian-markets__label">Dow Jones</span>
+		<span class="meridian-markets__label">Dow Jones TEST</span>
 		<span class="meridian-markets__value">—</span>
 		<span class="meridian-markets__change">Awaiting live data</span>
 	</div>

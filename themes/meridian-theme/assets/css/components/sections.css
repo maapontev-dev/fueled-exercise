@@ -53,7 +53,7 @@
 	color: var(--wp--preset--color--muted);
 }
 
-/* Markets snapshot (MER-528 placeholder band) */
+/* Markets snapshot */
 
 .meridian-markets__grid {
 	display: grid;
