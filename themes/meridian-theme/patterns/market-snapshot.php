@@ -2,7 +2,7 @@
 /**
  * Title: Market Snapshot
  * Slug: meridian-theme/market-snapshot
- * Categorties: meridian
+ * Categories: meridian
  * Description: Homepage market-snapshot band. Placeholder for ticket MER-528.
  *
  * @package MeridianTheme
