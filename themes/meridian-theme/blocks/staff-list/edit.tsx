@@ -24,6 +24,17 @@ export const BlockEdit = ({
 		[],
 	);
 
+	const departments = useSelect(
+		(select) =>
+			(select('core') as any).getEntityRecords('taxonomy', 'staff_department', {
+				per_page: -1,
+				hide_empty: true,
+				orderby: 'name',
+				order: 'asc',
+			}) as Array<{ id: number; name: string; slug: string }> | null,
+		[],
+	);
+
 	const controls = (
 		<InspectorControls>
 			<PanelBody title={__('Directory', 'meridian-theme')}>
@@ -79,6 +90,29 @@ export const BlockEdit = ({
 		<>
 			{controls}
 			<div {...blockProps}>
+				{maxPosts === 0 && departments && departments.length > 0 ? (
+					<div
+						className="meridian-staff-list__filter"
+						aria-label={__('Department filter preview', 'meridian-theme')}
+					>
+						<label
+							className="meridian-staff-list__filter-label"
+							htmlFor="meridian-staff-list-department-preview"
+						>
+							{__('Department', 'meridian-theme')}
+						</label>
+						<select
+							className="meridian-staff-list__filter-select"
+							id="meridian-staff-list-department-preview"
+							disabled
+						>
+							<option>{__('All departments', 'meridian-theme')}</option>
+							{departments.map((department) => (
+								<option key={department.id}>{department.name}</option>
+							))}
+						</select>
+					</div>
+				) : null}
 				<div className="meridian-staff-list">
 					{visible.map((member) => (
 						<StaffCardPreview key={member.id} {...toStaffCardProps(member)} />
