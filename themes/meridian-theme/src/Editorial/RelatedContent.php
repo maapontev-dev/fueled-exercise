@@ -92,7 +92,7 @@ class RelatedContent implements ModuleInterface {
 	 * @return array<int, int> Related article IDs.
 	 */
 	private function get_related_article_ids( int $post_id ): array {
-		$cache_key = 'meridian_related_articles';
+		$cache_key = 'meridian_related_articles' . $post_id;
 
 		$cached = get_transient( $cache_key );
 

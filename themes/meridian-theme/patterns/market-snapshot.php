@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Market Snapshot (placeholder)
+ * Title: Market Snapshot
  * Slug: meridian-theme/market-snapshot
+ * Categories: meridian
  * Description: Homepage market-snapshot band. Placeholder for ticket MER-528.
- * Inserter: false
  *
  * @package MeridianTheme
  *
@@ -18,7 +18,7 @@
 <!-- wp:html -->
 <div class="meridian-markets__grid" role="presentation">
 	<div class="meridian-markets__item">
-		<span class="meridian-markets__label">Dow Jones</span>
+		<span class="meridian-markets__label">Dow Jones TEST</span>
 		<span class="meridian-markets__value">—</span>
 		<span class="meridian-markets__change">Awaiting live data</span>
 	</div>

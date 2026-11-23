@@ -58,6 +58,10 @@ class Blocks implements ModuleInterface {
 		if ( file_exists( MERIDIAN_THEME_BLOCK_DIST_DIR ) ) {
 			$block_json_files = glob( MERIDIAN_THEME_BLOCK_DIST_DIR . '*/block.json' );
 			$block_names      = [];
+			$excluded_blocks  = [
+				'meridian/testimonial-list',
+				'meridian/testimonial-card',
+			];
 
 			if ( empty( $block_json_files ) ) {
 				return;
@@ -68,6 +72,12 @@ class Blocks implements ModuleInterface {
 				$block        = register_block_type_from_metadata( $block_folder );
 
 				if ( ! $block ) {
+					continue;
+				}
+
+				// Do not expose stale compiled artifacts whose source blocks have been removed.
+				if ( in_array( $block->name, $excluded_blocks, true ) ) {
+					unregister_block_type( $block->name );
 					continue;
 				}
 
