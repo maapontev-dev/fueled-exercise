@@ -8,7 +8,6 @@
 if ( ! function_exists( 'meridian_market_snapshot_fetch' ) ) {
 	function meridian_market_snapshot_fetch() {
 		$cache_key       = 'meridian_market_snapshot_data';
-		$last_good_key   = 'meridian_market_snapshot_last_good';
 		$cached_snapshot = get_transient( $cache_key );
 
 		if ( is_array( $cached_snapshot ) && ! empty( $cached_snapshot ) ) {
@@ -80,12 +79,8 @@ if ( ! function_exists( 'meridian_market_snapshot_fetch' ) ) {
 
 		if ( ! empty( $snapshot ) ) {
 			set_transient( $cache_key, $snapshot, 10 * MINUTE_IN_SECONDS );
-			set_transient( $last_good_key, $snapshot, DAY_IN_SECONDS );
 			return $snapshot;
 		}
-
-		$last_good = get_transient( $last_good_key );
-		return is_array( $last_good ) ? $last_good : [];
 	}
 }
 
