@@ -1,0 +1,24 @@
+/* Featured quote */
+.meridian-quote__inner {
+	border: 0;
+	margin: 0 auto;
+	max-width: 52rem;
+	padding: 0;
+	text-align: center;
+}
+
+.meridian-quote__inner p {
+	font-weight: 500;
+	letter-spacing: -0.01em;
+	line-height: 1.35;
+}
+
+.meridian-quote__inner cite {
+	color: var(--wp--preset--color--muted);
+	display: block;
+	font-size: var(--wp--preset--font-size--minus-1);
+	font-style: normal;
+	letter-spacing: 0.04em;
+	margin-top: var(--wp--preset--spacing--16);
+	text-transform: uppercase;
+}
