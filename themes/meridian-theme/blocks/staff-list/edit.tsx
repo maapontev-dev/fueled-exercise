@@ -95,10 +95,17 @@ export const BlockEdit = ({
 						className="meridian-staff-list__filter"
 						aria-label={__('Department filter preview', 'meridian-theme')}
 					>
-						<label className="meridian-staff-list__filter-label">
+						<label
+							className="meridian-staff-list__filter-label"
+							htmlFor="meridian-staff-list-department-preview"
+						>
 							{__('Department', 'meridian-theme')}
 						</label>
-						<select className="meridian-staff-list__filter-select" disabled>
+						<select
+							className="meridian-staff-list__filter-select"
+							id="meridian-staff-list-department-preview"
+							disabled
+						>
 							<option>{__('All departments', 'meridian-theme')}</option>
 							{departments.map((department) => (
 								<option key={department.id}>{department.name}</option>

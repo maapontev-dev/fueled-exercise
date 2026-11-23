@@ -20,21 +20,20 @@
 }
 
 .meridian-staff-list__filter {
-	align-items: end;
+	align-content: center;
+	align-items: center;
+	background-color: var(--wp--preset--color--surface);
+	border-radius: 4px;
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.75rem;
 	margin-block-end: var(--wp--preset--spacing--40, 1.5rem);
-	align-items: center;
-	align-content: center;
-	background-color: var(--wp--preset--color--surface);
-	border-radius: 4px;
 	padding: 0.75rem 1.25rem;
 }
 
 .meridian-staff-list__filter-label {
-	font-weight: 600;
 	color: var(--wp--preset--color--muted);
+	font-weight: 600;
 	text-transform: uppercase;
 }
 
