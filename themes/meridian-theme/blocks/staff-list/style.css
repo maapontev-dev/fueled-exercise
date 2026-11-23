@@ -18,3 +18,37 @@
 .meridian-staff-list__more-link {
 	font-weight: 600;
 }
+
+.meridian-staff-list__filter {
+	align-items: end;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin-block-end: var(--wp--preset--spacing--40, 1.5rem);
+	align-items: center;
+	align-content: center;
+	background-color: var(--wp--preset--color--surface);
+	border-radius: 4px;
+	padding: 0.75rem 1.25rem;
+}
+
+.meridian-staff-list__filter-label {
+	font-weight: 600;
+	color: var(--wp--preset--color--muted);
+	text-transform: uppercase;
+}
+
+.meridian-staff-list__filter-select {
+	background-color: var(--wp--preset--color--base, #fff);
+	border: 1px solid currentColor;
+	border-radius: 4px;
+	min-block-size: 2.75rem;
+	min-inline-size: 12rem;
+	padding-inline: 0.75rem;
+}
+
+.meridian-staff-list__no-results {
+	border-block: 1px solid var(--wp--preset--color--tertiary, #d8d8d8);
+	margin: 0;
+	padding-block: var(--wp--preset--spacing--40, 1.5rem);
+}
