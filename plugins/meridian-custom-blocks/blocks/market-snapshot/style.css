@@ -1,0 +1,11 @@
+.meridian-markets__editor-preview {
+	min-height: 4rem;
+}
+
+.meridian-markets__change.is-up {
+	color: var(--wp--preset--color--accent, #b87333);
+}
+
+.meridian-markets__change.is-down {
+	color: var(--wp--preset--color--muted);
+}

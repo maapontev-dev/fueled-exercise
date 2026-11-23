@@ -13,11 +13,12 @@
  */
 
 /**
- * Register the testimonial block.
+ * Register custom blocks.
  *
  * @return void
  */
 function meridian_custom_blocks_register() {
 	register_block_type( __DIR__ . '/blocks/testimonial' );
+	register_block_type( __DIR__ . '/blocks/market-snapshot' );
 }
 add_action( 'init', 'meridian_custom_blocks_register' );
